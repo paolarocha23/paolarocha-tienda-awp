@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(135deg, #fff5f5, #ffe5e5);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background: #c62828;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.3);
+}
+
+header h1 {
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+
+/* ETIQUETA */
+
+.badge {
+    font-size: 15px;
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+
+.badge-perros {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+}
+
+
+/* MENSAJE */
+
+.informacion {
+    background-color: #ffebee;
+    color: #c62828;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+
+/* GALERÍA */
+
+.catalogo h2 {
+    color: #c62828;
+}
+
+.catalogo p {
+    font-size: 17px;
+}
+
+
+/* TARJETAS */
+
+.card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(198, 40, 40, 0.25) !important;
+}
+
+
+/* IMÁGENES */
+
+.card-img-top {
+    height: 280px;
+    object-fit: cover;
+    background: #ffebee;
+    padding: 10px;
+}
+
+
+/* CONTENIDO */
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #c62828;
+}
+
+.card-text {
+    color: #555;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+
+}

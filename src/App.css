@@ -1,0 +1,159 @@
+body {
+    background: linear-gradient(135deg, #fff0f8, #f3e8ff);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: #9c27b0;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 5px 15px rgba(106, 27, 154, 0.3);
+}
+
+header h1 {
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* ETIQUETAS */
+
+.badge {
+    font-size: 15px;
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+
+.badge-libros {
+    background-color: #e1bee7;
+    color: #4a148c;
+}
+
+.badge-disponibles {
+    background-color: #f8bbd0;
+    color: #880e4f;
+}
+
+/* MENSAJE */
+
+.informacion {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* CATÁLOGO */
+
+.catalogo h2 {
+    color: #6a1b9a;
+}
+
+.catalogo p {
+    font-size: 17px;
+}
+
+/* TARJETAS */
+
+.card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(106, 27, 154, 0.25) !important;
+}
+
+/* IMÁGENES */
+
+.card-img-top {
+    height: 280px;
+    object-fit: contain;
+    background: linear-gradient(135deg, #fce4ec, #ede7f6);
+    padding: 15px;
+}
+
+/* CONTENIDO */
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #6a1b9a;
+    min-height: 48px;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* ESTADO DISPONIBLE */
+
+.estado-disponible {
+    color: #9c27b0;
+    font-weight: bold;
+}
+
+/* ESTADO PRESTADO */
+
+.estado-prestado {
+    color: #d81b60;
+    font-weight: bold;
+}
+
+/* BOTÓN PRESTAR */
+
+.btn-prestar {
+    background: linear-gradient(90deg, #7b1fa2, #ab47bc);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-prestar:hover {
+    background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+    color: white;
+    transform: scale(1.03);
+}
+
+/* BOTÓN DEVOLVER */
+
+.btn-devolver {
+    background: linear-gradient(90deg, #d81b60, #ec407a);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-devolver:hover {
+    background: linear-gradient(90deg, #ad1457, #c2185b);
+    color: white;
+    transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+
+}
